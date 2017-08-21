@@ -137,7 +137,8 @@ public class jcuda_test {
             }
         }
         System.out.println("Test "+(passed?"PASSED":"FAILED"));
-
+        System.out.println(hostOutput[2]);
+        
         // Clean up.
         cuMemFree(deviceInputA);
         cuMemFree(deviceInputB);
